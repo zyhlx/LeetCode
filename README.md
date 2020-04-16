@@ -43,7 +43,7 @@
 
 查找算法 | 平均时间复杂度 | 空间复杂度 | 查找条件
 ---|---|---|---
-[顺序查找](Algorithm/SequentialSearch.h) | O(n) | O(1) | 无序或有序
+[顺序查找](Algorithm/Find/SequentialSearch.java) | O(n) | O(1) | 无序或有序
 [二分查找（折半查找）](Algorithm/BinarySearch.h) | O(log<sub>2</sub>n)| O(1) | 有序
 [插值查找](Algorithm/InsertionSearch.h) | O(log<sub>2</sub>(log<sub>2</sub>n)) | O(1) | 有序
 [斐波那契查找](Algorithm/FibonacciSearch.cpp) | O(log<sub>2</sub>n) | O(1) | 有序
