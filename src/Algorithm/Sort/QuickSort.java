@@ -9,6 +9,15 @@
 一趟排序完成数组的第一次排序，设置一个键值data,找到对应正确的位置，data的值插进去；
 分治就是用分而治之的思想，将键值左右两侧分为两个部分，再调用递归，将左边的部分再分为两个部分，将右边的部分再分为两个部分，依此类推，直到将数组排列完。
 
+快速排序是内排序中平均性能较好的排序，思想是每趟排序时选取一个数据（通常用数组的第一个数）作为关键数据，然后将所有比它小的数都放到它的左边，所有比它大的数都放到它的右边.
+
+快速排序的特点：
+
+1.不稳定；
+2.快速排序过程中不会产生有序子序列，但每一趟排序后都有一个元素放在其最终位置上；
+3.每次选择的关键值可以把数组分为两个子数组的时候，快速排序算法的速度最快，当数组已经是正序或逆序时速度最慢；
+4.递归次数与每次划分后得到的分区的处理顺序无关；
+5.对n个关键字进行快速排序，最大递归深度为n，最小递归深度为log2n；
 */
 
 public class QuickSort{
@@ -22,6 +31,29 @@ public class QuickSort{
         }
 
     }
+
+
+    public static int Partition(int arr[], int low, int high) {
+        int data = arr[high];
+        /*
+         * 一次遍历的方法：插空法 定义一个data将arr[low]存起来，并把这个位置挖空
+         */
+        int i = low-1;
+        for(int j = low;j<=high-1;j++){
+            if(arr[j]<=data){
+                i++;
+                int temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+            }
+        }
+        arr[high] = arr[i+1];
+        arr[i+1] = data;
+        return i+1;
+    }
+
+
+
 
     public static int PartSort(int arr[], int low, int high) {
         int data = arr[low];
@@ -51,22 +83,22 @@ public class QuickSort{
     }
 
 
-    public static int Partition(int arr[], int low, int high) {
-        int data = arr[high];
-        /*
-         * 一次遍历的方法：插空法 定义一个data将arr[low]存起来，并把这个位置挖空
-         */
-        int i = low-1;
-        for(int j = low;j<=high-1;j++){
-            if(arr[j]<=data){
-                i++;
-                int temp = arr[j];
-                arr[j] = arr[i];
-                arr[i] = temp;
-            }
-        }
-        arr[high] = arr[i+1];
-        arr[i+1] = data;
-        return i+1;
+    /*
+    *void quickSort(vector<int> &s, int low, int high){
+    if (low >= high)  return;
+    int l = low, r = high, val = s[low];
+    while (l < r){
+        while (l < r&&s[r] >= val)  r--;
+        if (l < r)  s[l++] = s[r];
+        while (l < r&&s[l] <= val)  l++;
+        if (l < r)  s[r--] = s[l];
     }
+    s[l] = val;
+    quickSort(s, low, l - 1);
+    quickSort(s, r + 1, high);
+}
+    *
+    *
+    * */
+
 }
