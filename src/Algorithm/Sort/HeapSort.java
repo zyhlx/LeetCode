@@ -3,6 +3,8 @@
 * 这里采用最大堆方式：位于堆顶的元素总是整棵树的最大值，每个子节点的值都比父节点小，堆要时刻保持这样的结构，所以一旦堆里面的数据发生变化，要对堆重新进行一次构建。
 * 不稳定，最坏，最好，平均时间复杂度均为O(nlogn)
 * 应用就是优先队列适合topn
+*
+* Queue<Integer> priorityQueue = new PriorityQueue<>((Integer i1, Integer i2) -> Integer.compare(i2, i1));
 * */
 public class HeapSort{
     // 构建大根堆：将array看成完全二叉树的顺序存储结构
