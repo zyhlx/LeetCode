@@ -1,3 +1,5 @@
+package Algorithm.Sort;
+
 /*
 （有序区，无序区）。把无序区的第一个元素插入到有序区的合适的位置。对数组：比较得少，换得多。
 插入排序思路：
@@ -23,6 +25,7 @@ public class InsertSort{
             int temp=arr[i];
             //temp存放将要插入的数据
             if(arr[i]<arr[i-1]) {
+                int j;
                 for(j=i-1;j>=0&&arr[j]>temp;j--) {
                     arr[j+1]=arr[j];
                     //temp的位置空出来，把第j个的值赋给第j+1个；

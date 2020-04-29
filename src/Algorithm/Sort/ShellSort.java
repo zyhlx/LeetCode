@@ -1,3 +1,5 @@
+package Algorithm.Sort;
+
 public class ShellSort{
 
     // 希尔排序：每一轮按照事先决定的间隔进行插入排序，间隔会依次缩小，最后一次一定要是1。

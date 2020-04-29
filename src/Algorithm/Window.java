@@ -1,3 +1,5 @@
+
+/*
 int left = 0, right = 0;
 
         while (right < s.size()) {
@@ -9,3 +11,6 @@ int left = 0, right = 0;
         left++;
         }
         }
+
+
+ */

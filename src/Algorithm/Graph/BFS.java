@@ -1,9 +1,10 @@
-//BFS 的两个主要方案：遍历或找出最短路径
+package Algorithm.Graph;//BFS 的两个主要方案：遍历或找出最短路径
 
 public class BFS{
     /**
      * Return the length of the shortest path between root and target node.
      */
+    /*
     int BFS(Node root, Node target) {
         Queue<Node> queue;  // store all nodes which are waiting to be processed
         int step = 0;       // number of steps neeeded from root to current node
@@ -26,10 +27,13 @@ public class BFS{
         return -1;          // there is no path from root to target
     }
 
+     */
+
 
     /**
      * Return the length of the shortest path between root and target node.
      */
+    /*
     int BFS(Node root, Node target) {
         Queue<Node> queue;  // store all nodes which are waiting to be processed
         Set<Node> used;     // store all the used nodes
@@ -56,4 +60,6 @@ public class BFS{
         }
         return -1;          // there is no path from root to target
     }
+
+     */
 }

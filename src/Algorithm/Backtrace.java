@@ -1,4 +1,4 @@
-/*
+package Algorithm;/*
 *
 *
 * result = []
@@ -15,6 +15,9 @@ def backtrack(路径, 选择列表):
 *
 *
 * */
+
+import java.util.LinkedList;
+import java.util.List;
 
 public class Backtrace{
     List<List<Integer>> res = new LinkedList<>();

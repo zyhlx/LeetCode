@@ -1,3 +1,5 @@
+package Algorithm.Sort;
+
 /*
 * 堆排序是基于选择排序的一种排序算法，堆是一个近似完全二叉树的结构，且满足子结点的键值或索引总是小于（或者大于）它的父节点。
 * 这里采用最大堆方式：位于堆顶的元素总是整棵树的最大值，每个子节点的值都比父节点小，堆要时刻保持这样的结构，所以一旦堆里面的数据发生变化，要对堆重新进行一次构建。
@@ -85,13 +87,13 @@ public class HeapSort{
         HeapSort hs = new HeapSort();
         int[] array = { 87, 45, 78, 32, 17, 65, 53, 9, 122 };
         System.out.print("构建大根堆：");
-        hs.toString(hs.buildMaxHeap(array));
-        System.out.print("\n" + "删除堆顶元素：");
-        hs.toString(hs.deleteMax(array));
-        System.out.print("\n" + "插入元素63:");
-        hs.toString(hs.insertData(array, 63));
-        System.out.print("\n" + "大根堆排序：");
-        hs.toString(hs.heapSort(array));
+//        hs.toString(hs.buildMaxHeap(array));
+//        System.out.print("\n" + "删除堆顶元素：");
+//        hs.toString(hs.deleteMax(array));
+//        System.out.print("\n" + "插入元素63:");
+//        hs.toString(hs.insertData(array, 63));
+//        System.out.print("\n" + "大根堆排序：");
+//        hs.toString(hs.heapSort(array));
     }
 
 }

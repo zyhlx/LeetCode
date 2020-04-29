@@ -1,3 +1,4 @@
+/*
 int binarySearch(int[] nums, int target) {
         int left = 0, right = ...;
 
@@ -13,3 +14,5 @@ int binarySearch(int[] nums, int target) {
         }
         return ...;
         }
+
+ */
