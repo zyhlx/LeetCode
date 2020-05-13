@@ -1,6 +1,4 @@
-package No_322_零钱兑换;
-
-import java.util.Arrays;
+package DP.No_322_零钱兑换;
 
 public class Solution {
     public int coinChange(int[] coins, int amount) {
