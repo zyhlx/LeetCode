@@ -1,9 +1,7 @@
-package No_315_计算右侧小于当前元素的个数;
+package Training.Difficult.No_315_计算右侧小于当前元素的个数;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
-import java.util.TreeMap;
 
 public class Solution {
     private int[] temp;

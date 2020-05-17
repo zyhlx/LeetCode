@@ -1,4 +1,4 @@
-package DP.No_322_零钱兑换;
+package Training.DP.No_322_零钱兑换;
 
 public class Solution {
     public int coinChange(int[] coins, int amount) {

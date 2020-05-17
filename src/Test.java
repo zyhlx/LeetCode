@@ -2,6 +2,7 @@ import java.util.*;
 
 public class Test {
     public static void main(String[] args){
+
       openLock(new String[]{"0201","0101","0102","1212","2002"},"0202");
         Set<Character> b = new LinkedHashSet<>();
         b.add('c');

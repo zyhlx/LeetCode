@@ -1,7 +1,5 @@
 package Algorithm.Graph;
 
-import org.w3c.dom.Node;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -34,14 +32,6 @@ public class DFS{
             return ans;
         }
 
-
-
-
-
-
-
-
-
     /*
      * Return true if there is a path from cur to target.
      */
@@ -51,7 +41,7 @@ public class DFS{
         for (next : each neighbor of cur) {
             if (next is not in visited) {
                 add next to visted;
-                return true if DFS(next, target, visited) == true;
+                return true if Training.DFS(next, target, visited) == true;
             }
         }
         return false;

@@ -1,4 +1,4 @@
-package No_605种花问题;
+package Training.GD.No_605种花问题;
 
 public class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
